@@ -1,5 +1,23 @@
-﻿2014/06/14 19:55:37 にビルドを開始しました。
+﻿2014/06/16 0:31:56 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\cygwin\home\dalu\git\qt_work\qt_test06\app.vcxproj" (Build ターゲット)。
+     1>CustomBuild:
+         MOC mainwindow.h
+         RCC app.qrc
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are debug\moc_mainwindow.cpp, release\moc_mainwindow.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of qrc_app.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are debug\qrc_app.cpp, release\qrc_app.cpp.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\..\..\..\Qt\5.3\msvc2013_64\include /I..\..\..\..\Qt\5.3\msvc2013_64\include\QtWidgets /I..\..\..\..\Qt\5.3\msvc2013_64\include\QtGui /I..\..\..\..\Qt\5.3\msvc2013_64\include\QtANGLE /I..\..\..\..\Qt\5.3\msvc2013_64\include\QtCore /Idebug /I"..\..\..\..\Qt\5.3\msvc2013_64\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -Zm200 -w34100 -w34189 main.cpp mainwindow.cpp debug\moc_mainwindow.cpp debug\qrc_app.cpp
+         main.cpp
+     1>main.cpp(2): fatal error C1083: include ファイルを開けません。'QApplication':No such file or directory
+         mainwindow.cpp
+     1>mainwindow.cpp(2): fatal error C1083: include ファイルを開けません。'QtWidgets':No such file or directory
+         moc_mainwindow.cpp
+     1>c:\cygwin\home\dalu\git\qt_work\qt_test06\debug\../mainwindow.h(5): fatal error C1083: include ファイルを開けません。'QMainWindow':No such file or directory
+         qrc_app.cpp
+     1>debug\qrc_app.cpp(9): fatal error C1083: include ファイルを開けません。'QtCore/qglobal.h':No such file or directory
+         コードを生成中...
+     1>プロジェクト "C:\cygwin\home\dalu\git\qt_work\qt_test06\app.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
 
-ビルドに成功しました。
+ビルドに失敗しました。
 
-経過時間 00:00:00.07
+経過時間 00:00:04.83
