@@ -6,17 +6,6 @@
 #include <qdir.h>
 #include <QtSql/qsqlerror.h>
 
-//2014.06.21 iida 
-//
-//DB接続テスト用。07は作業継続、、Qt以外のライブラリと
-//連携しようとすると途端に面倒になる。。
-//
-//本来の目的はin-memoryでsqliteを使うこと、起動終了時に
-//save,loadすることだったんだけどload時に失敗する。。
-//sqlite側で発生しているようで、sqliteコンパイルしないと
-//原因不明。。あるいは、デバッグ実行時に別のsqliteと競合
-//したりする？
-//
 
 int main(int argc, char *argv[]){
 
